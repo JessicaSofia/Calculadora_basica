@@ -27,7 +27,19 @@ public class Calculadora_basica {
     public static void main(String[] args) throws IOException {
        
 
-	
+	int p;
+        OperacionesImpl op = new OperacionesImpl();
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Ingrese el núemro 1: ");
+		int n1 = Integer.parseInt(br.readLine());
+
+		System.out.println("Ingrese el núemro 2: ");
+		int n2 = Integer.parseInt(br.readLine());
+		
+		System.out.println("Seleccione la operación a realizar:\n 1 suma \n 2 resta \n 3 multiplicación \n 4 división \n Precione cualquier otro número para salir...");
+		int o = Integer.parseInt(br.readLine());
     }
     
 }
